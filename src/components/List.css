@@ -1,0 +1,32 @@
+.items-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    max-width: min(400px, 100vw);
+    display: grid;
+    grid-template:
+        "checkbox empty title" auto
+        "checkbox empty desc" auto / auto 1rem auto;
+}
+.checkbox-container {
+    grid-area: checkbox;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    grid-area: title;
+    margin-block-start: 0;
+    margin-block-end: .5rem;
+}
+.desc {
+    grid-area: desc;
+    margin-block: 0;
+}

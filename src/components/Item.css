@@ -1,0 +1,15 @@
+.item.done .title,
+.item.done .desc {
+    text-decoration: line-through;
+}
+
+.item {
+    overflow: hidden;
+    transition: flex 1s ease-out, height 1s ease-out;
+    flex: 1 0 auto;
+}
+
+.item.shrink {
+    flex: 0 0 auto;
+    height: 0.0000001px;
+}
